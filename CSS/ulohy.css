@@ -1,5 +1,6 @@
 #ulohy {
-  border-radius: 15px;
+  border-radius: 35px;
+  border-style: ridge;
   background-image: url(../images/header-footer.png);
   position: relative;
   padding: 100px;

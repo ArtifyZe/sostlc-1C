@@ -19,6 +19,8 @@ body {
   height: 75px;
   margin-bottom: 0px;
   position: relative;
+  border-top-style: ridge;
+  border-color: gray;
   bottom: 0px;
 }
 
@@ -35,15 +37,18 @@ body {
 }
 
 .logo {
-  padding: 8px 30px;
+  border-radius: 100%;
+  padding: 11px 30px;
   height: 55px;
   width: 55px;
   transition-duration: 0.5s;
 }
 
-.logo:hover {
-  height: 60px;
-  width: 60px;
+.web-name {
+  font-size: 25px;
+  color: white;
+  margin-left: 5px;
+  margin-top: -20px;
 }
 
 .scroll-header {
