@@ -25,12 +25,12 @@ body {
 }
 
 .nadpis {
-  color: white;
+  color: rgb(0, 183, 255);
   font-size: 30px;
 }
 
 .nadpis2 {
-  color: white;
+  color: rgb(0, 217, 255);
   font-size: 25px;
   position: relative;
   top: 5px;
@@ -62,7 +62,7 @@ body {
 }
 
 .footer {
-  font-size: 23px;
+  font-size: 20px;
   color: white;
   position: relative;
   top: 10px;
@@ -71,7 +71,7 @@ body {
 .button {
   color: white;
   padding: 10px 8px;
-  margin-right: 20px;
+  margin-right: 15px;
   margin-top: 13px;
   float: right;
   cursor: pointer;

@@ -1,4 +1,4 @@
-#poznamky {
+#rozvrh {
   border-radius: 35px;
   border-style: ridge;
   background-image: url(../images/header-footer.png);
@@ -12,12 +12,12 @@
   color: aqua;
   font-size: 20px;
 }
-
-.tabulka-datum {
+  
+.tabulka-hodina {
   color: aqua;
   font-size: 18px;
 }
-
+  
 .tabulka-text {
   color: white;
   font-size: 18px;

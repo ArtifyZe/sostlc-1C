@@ -4,25 +4,22 @@
   background-image: url(../images/header-footer.png);
   position: relative;
   padding: 100px;
-  height: 450px;
+  height: 400px;
   width: 50%;
 }
 
-.ulohy-text {
-  color: rgb(0, 178, 255);
+.tabulka-nadpis {
+  color: aqua;
   font-size: 20px;
 }
 
-.ulohy-text2 {
-  color: rgb(0, 216, 255);
+.tabulka-datum {
+  color: aqua;
   font-size: 18px;
 }
 
-.ulohy-stiahnut {
+.tabulka-text {
   color: white;
-  transition-duration: 0.6s;
-}
-
-.ulohy-stiahnut:hover {
-  color: rgb(0, 251, 255);
+  font-size: 18px;
+  text-align: center;
 }
