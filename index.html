@@ -1,48 +1,64 @@
 <html>
   <head>
-    <link rel="icon" href="images/gdm.ico" type="image/icon">
-	  <link rel="stylesheet" type="text/css" href="CSS/main.css">
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <title>GDM Page | Domov</title>
+    <title>SOŠ Technická, Lučenec - 1.C</title>
+    <link rel="icon" href="../home/images/gdm.ico" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="../home/CSS/main.css">
   </head>
 
 <body>
   <header id="header"></header>
 
-  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <center>
-    <div id="index">
-	    <br><br>
-      <a class="nadpis"><b><u>Grafik Digitálnych Médií</u></b></a>
-	    <br>
-      <a class="nadpis2">【1.C】</a>
-      <br><br><br><br><br>
-      <a class="index-text-oznam-nadpis"><b>!!! OZNAM !!!</b></a>
-      <br>
-      <a class="index-text-oznam"><i>Stránku otvárať len cez počítač!<br>Stránka je zhotovená podľa rozlíšenia obrazovky počítača. (1600x900)</i></a>
-      <br><br><br><br>
-      <hr>
-    </div>
+    <a class="demo" id="demo"></a>
   </center>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="scroll-header"></div>
 
   <footer id="footer">
     <center>
-	    <br>
-	    <a class="footer">© &nbsp Všetky práva vyhradené</a>
+      <br>
+      <a style="color: rgb(97, 255, 97); font-size: 25px; position: relative; top: 3px;"">© </a>
+      <a style="color: rgb(183, 255, 183); font-size: 20px; position: relative; top: 1px;"> Stredná odborná skola technická, Lučenec</a>
     </center>
   </footer>
-
-  <div class="scroll-header">
-    <a href="index.html">
-	    <img src="images/logo.png" class="logo" title="Domov">
-    </a>
-    <a href="https://discord.gg/XxgYMpK" class="button" title="Discord">Discord</a>
-    <a href="http://www.pspad.com/sk/download.htm" class="button" title="PSPad">PSPad</a>
-    <a href="prax.html" class="button" title="Prax">Prax</a>
-    <a href="rozvrh.html" class="button" title="Rozvrh">Rozvrh</a>
-	  <a href="index.html" class="button" title="Domov" style="color: rgb(0, 205, 255);">Domov</a>
-  </div>
 </body>
+
+<style>
+#demo {border-bottom-style: ridge; border-color: rgb(255, 187, 0);}
+.demo {color: rgb(255, 145, 0); font-size: 100px;}
+</style>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 21, 2020 23:59:59").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+</script>
